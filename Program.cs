@@ -12,18 +12,14 @@ bool IsPalindrome(int number)
 {
     int reversedNumber = 0;
     int j = Math.Abs(number);
-    while(j > 0) {
+    while (j > 0)
+    {
         reversedNumber = reversedNumber * 10 + j % 10;
         j = j / 10;
     }
-    if (Math.Abs(number) == reversedNumber){
-        return true;
-    }
-    else return false;
+     return (Math.Abs(number) == reversedNumber);
 }
 
-System.Console.WriteLine(IsPalindrome(12821));
-    
-
+System.Console.WriteLine(IsPalindrome(13821));
 
 
